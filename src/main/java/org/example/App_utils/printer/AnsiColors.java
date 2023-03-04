@@ -1,4 +1,4 @@
-package App_utils.printer;
+package org.example.App_utils.printer;
 
 /**
  * Color constants for color text formatting on terminal apps.

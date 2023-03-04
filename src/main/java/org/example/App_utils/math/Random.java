@@ -1,4 +1,4 @@
-package App_utils.math;
+package org.example.App_utils.math;
 
 import java.util.List;
 

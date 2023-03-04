@@ -1,4 +1,4 @@
-package App_utils.math;
+package org.example.App_utils.math;
 
 /**
  * Exception when a function requires a <strong>Max</strong> and <strong>Min</strong>

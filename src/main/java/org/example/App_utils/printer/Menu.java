@@ -1,6 +1,6 @@
-package App_utils.printer;
+package org.example.App_utils.printer;
 
-import App_utils.arrayUtils.ArrayUtils;
+import org.example.App_utils.arrayUtils.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.List;

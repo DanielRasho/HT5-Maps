@@ -1,5 +1,6 @@
-package App_utils.printer;
+package org.example.App_utils.printer;
 
+import java.util.Arrays;
 import java.util.Scanner;
 import java.util.function.Predicate;
 
@@ -259,6 +260,18 @@ public class Printer {
         println(message, color);
         println(footer);
         reader.nextLine();
+    }
+
+    public static boolean printSimpleMenu(String header, String trueOption, String falseOption){
+        clearConsole();
+        Menu menu = new Menu()
+                .header(header)
+                .data(Arrays.asList(
+                        new MenuEntry<String>(trueOption),
+                        new MenuEntry<String>(falseOption)
+                ))
+                .show();
+        return menu.getSelectedIndex() == 0;
     }
 
     /**

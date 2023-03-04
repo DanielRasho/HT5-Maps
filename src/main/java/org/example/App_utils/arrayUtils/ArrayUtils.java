@@ -1,4 +1,4 @@
-package App_utils.arrayUtils;
+package org.example.App_utils.arrayUtils;
 
 import java.util.List;
 
