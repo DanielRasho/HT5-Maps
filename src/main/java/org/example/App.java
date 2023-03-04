@@ -33,7 +33,7 @@ public class App
 
         // STORING CARDS ENTRIES ON MAP.
         Map<String, String> cardDB = MapFactory.getInstance(mapType, "", "");
-        FileReader.fillMapFromFile( cardDBFile, "\\|", "\\n|\\r",cardDB);
+        FileReader.fillMapFromFile( cardDBFile, "\\n|\\r", "\\|",cardDB);
 
         // CREATING USER CARD'S COLLECTION
         List<String> cardTypes = Arrays.asList("Monstruo", "Trampa", "Hechizo");
@@ -67,10 +67,7 @@ public class App
                 }
                 case 2 -> {
                     boolean canSort = Printer.printSimpleMenu("Sort cards by type? ", "Yes", "No");
-                    long timeStart = System.nanoTime();
                     UserCards.showCardDB(canSort);
-                    long execTime = System.nanoTime() - timeStart;
-                    System.out.println(execTime/1000000);
                 }
                 case 3 -> canContinue = false;
             }
